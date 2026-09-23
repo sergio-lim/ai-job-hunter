@@ -1,0 +1,52 @@
+[
+  {
+    "id": "r1",
+    "text": "Thanks for applying! We have received your application and will review it shortly.",
+    "expected": "simple_ack"
+  },
+  {
+    "id": "r2",
+    "text": "Thank you for your interest in Northwind Labs. This is an automated response confirming we received your resume.",
+    "expected": "simple_ack"
+  },
+  {
+    "id": "r3",
+    "text": "Your application has been received. We will be in touch if there is a fit. No further action is needed.",
+    "expected": "simple_ack"
+  },
+  {
+    "id": "r4",
+    "text": "We are currently reviewing your application. Thanks for your interest.",
+    "expected": "simple_ack"
+  },
+  {
+    "id": "r5",
+    "text": "Are you available for a 30-minute interview next Tuesday at 10:00 UTC?",
+    "expected": "needs_judgment"
+  },
+  {
+    "id": "r6",
+    "text": "We would like to move forward. Can you share your salary expectations and a possible start date?",
+    "expected": "needs_judgment"
+  },
+  {
+    "id": "r7",
+    "text": "Please reply with two time slots for a phone screen this week.",
+    "expected": "needs_judgment"
+  },
+  {
+    "id": "r8",
+    "text": "Happy to chat about the backend role. When can you schedule a call?",
+    "expected": "needs_judgment"
+  },
+  {
+    "id": "r9",
+    "text": "We would like to extend a written offer. Please confirm you can review it by Friday.",
+    "expected": "needs_judgment"
+  },
+  {
+    "id": "r10",
+    "text": "Could you complete this take-home assignment and send it back within five days?",
+    "expected": "needs_judgment"
+  }
+]

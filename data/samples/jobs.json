@@ -1,0 +1,112 @@
+[
+  {
+    "id": "sample:1001",
+    "title": "Senior Backend Engineer",
+    "company": "Northwind Labs",
+    "url": "https://jobs.example.com/northwind-labs/senior-backend-engineer",
+    "location": "Remote — Worldwide",
+    "tags": ["python", "fastapi", "postgres", "remote"],
+    "source": "sample",
+    "description": "Build public APIs and worker pipelines in Python. Postgres, Redis, and Docker day to day. Fully remote, any timezone.",
+    "status": "ok"
+  },
+  {
+    "id": "sample:1002",
+    "title": "Full Stack Engineer",
+    "company": "Cedar Grove Digital",
+    "url": "https://jobs.example.com/cedar-grove/full-stack-engineer",
+    "location": "Remote — Europe",
+    "tags": ["typescript", "react", "python", "remote"],
+    "source": "sample",
+    "description": "Ship product features across a TypeScript React client and a Python API. Looking for someone who enjoys clean HTTP contracts.",
+    "status": "ok"
+  },
+  {
+    "id": "sample:1003",
+    "title": "Staff Platform Engineer",
+    "company": "Helios Analytics",
+    "url": "https://jobs.example.com/helios-analytics/staff-platform-engineer",
+    "location": "Remote — Americas",
+    "tags": ["kubernetes", "golang", "platform", "remote"],
+    "source": "sample",
+    "description": "Own the internal developer platform. Kubernetes, service mesh, paved-road CI. Distributed team across the Americas.",
+    "status": "ok"
+  },
+  {
+    "id": "sample:1004",
+    "title": "Mobile Engineer (Kotlin)",
+    "company": "Blue Harbor Apps",
+    "url": "https://jobs.example.com/blue-harbor/mobile-kotlin",
+    "location": "Berlin, Germany (hybrid)",
+    "tags": ["kotlin", "android", "mobile"],
+    "source": "sample",
+    "description": "Android client for a consumer finance app. Three days on site in Berlin each week.",
+    "status": "ok"
+  },
+  {
+    "id": "sample:1005",
+    "title": "Data Engineer",
+    "company": "Maple Stack",
+    "url": "https://jobs.example.com/maple-stack/data-engineer",
+    "location": "Remote — Worldwide",
+    "tags": ["python", "sql", "dbt", "remote"],
+    "source": "sample",
+    "description": "Warehouse modeling in SQL and Python. dbt, Airflow, and a small open source tooling culture.",
+    "status": "ok"
+  },
+  {
+    "id": "sample:1006",
+    "title": "Site Reliability Engineer",
+    "company": "Pineshadow Cloud",
+    "url": "https://jobs.example.com/pineshadow/sre",
+    "location": "Remote — Americas",
+    "tags": ["devops", "kubernetes", "sre", "remote"],
+    "source": "sample",
+    "description": "On-call for a multi-region SaaS. Kubernetes, Terraform, and blameless incident reviews. Backend systems experience helps.",
+    "status": "ok"
+  },
+  {
+    "id": "sample:1007",
+    "title": "Machine Learning Engineer",
+    "company": "Redwood Metrics",
+    "url": "https://jobs.example.com/redwood-metrics/ml-engineer",
+    "location": "Remote — Worldwide",
+    "tags": ["python", "pytorch", "ml", "remote"],
+    "source": "sample",
+    "description": "Production ranking models. Python services, feature stores, and careful evaluation. Not a research-only seat.",
+    "status": "ok"
+  },
+  {
+    "id": "sample:1008",
+    "title": "Security Engineer",
+    "company": "Nightingale Systems",
+    "url": "https://jobs.example.com/nightingale/security-engineer",
+    "location": "Austin, TX (onsite)",
+    "tags": ["security", "python", "appsec"],
+    "source": "sample",
+    "description": "Application security reviews and detection engineering. Full-time onsite in Austin.",
+    "status": "ok"
+  },
+  {
+    "id": "sample:1009",
+    "title": "Unpaid Research Intern",
+    "company": "Harborline Software",
+    "url": "https://jobs.example.com/harborline/unpaid-intern",
+    "location": "Remote — Worldwide",
+    "tags": ["intern", "python", "unpaid", "remote"],
+    "source": "sample",
+    "description": "Unpaid intern to help with literature reviews. Academic credit only.",
+    "status": "ok"
+  },
+  {
+    "id": "sample:1010",
+    "title": "QA Automation Engineer",
+    "company": "Brightwell Testing",
+    "url": "https://jobs.example.com/brightwell/qa-automation",
+    "location": "Remote — Europe",
+    "tags": ["python", "pytest", "qa", "remote"],
+    "source": "sample",
+    "description": "Own end-to-end test suites in Python and Playwright. Close partner to a backend API team.",
+    "status": "ok"
+  }
+]

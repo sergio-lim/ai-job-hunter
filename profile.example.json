@@ -1,0 +1,39 @@
+{
+  "skills": [
+    "python",
+    "typescript",
+    "sql",
+    "postgres",
+    "docker",
+    "kubernetes",
+    "react",
+    "fastapi"
+  ],
+  "roles": [
+    "backend engineer",
+    "full stack",
+    "platform engineer",
+    "data engineer",
+    "devops",
+    "site reliability"
+  ],
+  "locations": [
+    "remote",
+    "worldwide",
+    "europe",
+    "americas"
+  ],
+  "remote_only": true,
+  "keywords": [
+    "api",
+    "backend",
+    "distributed",
+    "open source"
+  ],
+  "excluded_keywords": [
+    "unpaid",
+    "intern",
+    "crypto-only",
+    "web3-only"
+  ]
+}
