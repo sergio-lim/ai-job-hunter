@@ -6,7 +6,7 @@
 [![python](https://img.shields.io/badge/python-3.10+-blue)](#quickstart)
 [![tests](https://img.shields.io/badge/tests-pytest-success)](#quickstart)
 
-![demo](assets/demo.png)
+![demo](assets/demo.gif)
 
 Most job scrapers dump a pile of titles and hope you sort it. This one runs a short pipeline: collect from public APIs, drop duplicates, open each URL, score the fit, and (optionally) classify recruiter replies. Demo mode is fully offline. Live mode needs no credentials.
 
