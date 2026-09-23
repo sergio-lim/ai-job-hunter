@@ -4,7 +4,7 @@
 
 [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![python](https://img.shields.io/badge/python-3.10+-blue)](#quickstart)
-[![tests](https://img.shields.io/badge/tests-pytest-success)](#quickstart)
+[![ci](https://github.com/sergio-lim/ai-job-hunter/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sergio-lim/ai-job-hunter/actions/workflows/ci.yml)
 
 ![demo](assets/demo.gif)
 
