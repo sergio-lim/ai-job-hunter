@@ -6,7 +6,13 @@ from pathlib import Path
 from jobhunter.dedupe import SeenStore, dedupe
 from jobhunter.models import Job
 from jobhunter.notify import format_digest, get_notifier
-from jobhunter.score import Profile, ScoredJob, default_profile_path, score_jobs
+from jobhunter.score import (
+    Profile,
+    ScoredJob,
+    default_profile_path,
+    matching_excluded_company,
+    score_jobs,
+)
 from jobhunter.sources import fetch, load_sample_jobs
 from jobhunter.verify import verify_jobs
 
@@ -45,7 +51,14 @@ def run_pipeline(
     jobs = dedupe(jobs, store=store)
     jobs = verify_jobs(jobs, skip_http=demo)
 
-    scored = [item for item in score_jobs(jobs, profile) if item.score >= min_score]
+    # Hard filter: company blacklist is not a min_score threshold. Those jobs
+    # never appear in the digest, even when min_score is 0.
+    scored = [
+        item
+        for item in score_jobs(jobs, profile)
+        if matching_excluded_company(item.job.company, profile.excluded_companies) is None
+        and item.score >= min_score
+    ]
     if limit:
         scored = scored[:limit]
 

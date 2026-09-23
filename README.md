@@ -97,6 +97,7 @@ Copy `.env.example` and export what you need. Nothing is required for demo mode.
 - `remote_only` — cap the score when the posting is onsite-only
 - `keywords` — extra positive terms
 - `excluded_keywords` — hard penalty (internships, unpaid, …)
+- `excluded_companies` — hard filter: drop jobs whose company matches any entry (case-insensitive substring)
 
 Seen IDs are stored in `--seen path` (JSON). The file is optional and gitignored by default.
 

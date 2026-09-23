@@ -35,6 +35,7 @@ class Profile:
     remote_only: bool = False
     keywords: list[str] = field(default_factory=list)
     excluded_keywords: list[str] = field(default_factory=list)
+    excluded_companies: list[str] = field(default_factory=list)
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> Profile:
@@ -51,6 +52,7 @@ class Profile:
             remote_only=bool(data.get("remote_only", False)),
             keywords=as_list("keywords"),
             excluded_keywords=as_list("excluded_keywords"),
+            excluded_companies=as_list("excluded_companies"),
         )
 
     @classmethod
@@ -91,8 +93,30 @@ def is_remote(job: Job) -> bool:
     return any(marker in text for marker in REMOTE_MARKERS)
 
 
+def matching_excluded_company(company: str, excluded_companies: list[str]) -> str | None:
+    """Return the blacklist entry if *company* is a hard exclude.
+
+    Match is case-insensitive substring. This is not a score penalty: the
+    pipeline must drop the job from the final digest.
+    """
+    haystack = company.lower()
+    for name in excluded_companies:
+        needle = name.strip().lower()
+        if needle and needle in haystack:
+            return name.strip()
+    return None
+
+
 def score_job(job: Job, profile: Profile) -> ScoredJob:
     """Score a job 0-100 against a profile. Rules are deterministic."""
+
+    excluded_name = matching_excluded_company(job.company, profile.excluded_companies)
+    if excluded_name:
+        return ScoredJob(
+            job=job,
+            score=0,
+            reasons=[f"excluded company: {excluded_name}"],
+        )
 
     text = _haystack(job)
     title = job.title.lower()

@@ -35,5 +35,6 @@
     "intern",
     "crypto-only",
     "web3-only"
-  ]
+  ],
+  "excluded_companies": ["Acme Corp", "Example Industries"]
 }
